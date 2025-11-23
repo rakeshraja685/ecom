@@ -1,0 +1,47 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e4]:
+        - generic:
+          - img
+        - link "TechMart" [ref=e6] [cursor=pointer]:
+          - /url: /
+      - generic [ref=e7]:
+        - generic [ref=e8]:
+          - link "Featured" [ref=e9] [cursor=pointer]:
+            - /url: "#"
+          - link "Deals" [ref=e10] [cursor=pointer]:
+            - /url: "#"
+          - link "Shop" [ref=e11] [cursor=pointer]:
+            - /url: /products
+          - link "Brands" [ref=e12] [cursor=pointer]:
+            - /url: "#"
+        - generic [ref=e13]:
+          - link "Sign in" [ref=e14] [cursor=pointer]:
+            - /url: /login
+            - button "Sign in" [active] [ref=e15]:
+              - generic [ref=e16]: Sign in
+          - button [ref=e17] [cursor=pointer]:
+            - img [ref=e18]
+    - main [ref=e22]:
+      - generic [ref=e23]:
+        - heading "Sign in to TechMart" [level=2] [ref=e24]
+        - generic [ref=e25]:
+          - generic [ref=e26]:
+            - generic [ref=e27]: Email
+            - textbox "Enter your email" [ref=e28]: admin@techmart.com
+          - generic [ref=e29]:
+            - generic [ref=e30]: Password
+            - textbox "Enter your password" [ref=e31]: admin123
+          - button "Sign In" [ref=e32]
+        - paragraph [ref=e33]:
+          - text: Don't have an account?
+          - link "Sign up" [ref=e34] [cursor=pointer]:
+            - /url: /register
+  - button "Open Next.js Dev Tools" [ref=e40] [cursor=pointer]:
+    - img [ref=e41]
+  - alert [ref=e44]
+```

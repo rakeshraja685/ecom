@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ElectroMart - Modern Electronics Store</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#137fec",
+              "background-light": "#f6f7f8",
+              "background-dark": "#101922",
+            },
+            fontFamily: {
+              "display": ["Space Grotesk", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<!-- TopNavBar -->
+<div class="w-full flex justify-center sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-b border-gray-200 dark:border-white/10">
+<div class="flex flex-col max-w-7xl flex-1">
+<header class="flex items-center justify-between whitespace-nowrap px-4 sm:px-6 lg:px-8 py-3">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-3 text-gray-900 dark:text-white">
+<span class="material-symbols-outlined text-primary text-3xl">electric_bolt</span>
+<h2 class="text-xl font-bold leading-tight tracking-[-0.015em]">ElectroMart</h2>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal" href="#">Categories</a>
+<a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal" href="#">Deals</a>
+<a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal" href="#">New Arrivals</a>
+<a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal" href="#">Support</a>
+</div>
+</div>
+<div class="flex flex-1 justify-end gap-2 md:gap-4">
+<label class="hidden sm:flex flex-col w-full max-w-xs !h-10">
+<div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+<div class="text-gray-400 dark:text-gray-500 flex bg-gray-100 dark:bg-white/5 items-center justify-center pl-3 rounded-l-lg border border-gray-300 dark:border-white/10 border-r-0">
+<span class="material-symbols-outlined !text-xl">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-gray-900 dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border-gray-300 dark:border-white/10 bg-gray-100 dark:bg-white/5 focus:border-primary/50 h-full placeholder:text-gray-400 dark:placeholder:text-gray-500 px-4 rounded-l-none border-l-0 pl-2 text-sm font-normal leading-normal" placeholder="Search products..." value=""/>
+</div>
+</label>
+<div class="flex items-center gap-2">
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 w-10 bg-transparent text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-white/10">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 w-10 bg-transparent text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-white/10">
+<span class="material-symbols-outlined">shopping_cart</span>
+</button>
+</div>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" data-alt="User profile picture" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDaNYU5eiEl-o4VAnw0wsTyZaralPGYkoUsTaATRuPGVhA8mps0RhGuuOddeJZcnju3AvM4z5tkIKyLDXwUv06U-LH-h7cv1BqHZs-qurUT711LP8bhjiFVFK5ii4AKzejZ0JjeYr5M8BsAxrdZ2bhbop6nvbIhkUl-MjAiNCKg7VWIKg56WcUCXpPk3eaGC-s67A9YiI6OG7ZH5UYnu-Nj1CjPRb2KBuGdZcOT3jSzYCXn6ylKEAYAAMUk1vQEnd8JeBFk_tbCbYI");'></div>
+</div>
+</header>
+</div>
+</div>
+<main class="px-4 sm:px-6 lg:px-8 flex flex-1 justify-center py-5">
+<div class="layout-content-container flex flex-col max-w-7xl flex-1 gap-12">
+<!-- HeroSection -->
+<div class="@container">
+<div class="@[480px]:p-0">
+<div class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 rounded-xl items-start justify-end px-6 pb-10 @[480px]:px-12 @[480px]:pb-12" data-alt="Promotional banner for a new smartphone with a sleek design" style='background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.6) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuBGYMuSI8_zAJgZyZxfm7FBKszIqzFuX42JCOq0cl-eRD3aB8anS-3dM_nKhKaf3xO2io8gdwlOP2Xp0Dq8xceS-Ss6kREBY-rS0ASQCpjkpP7PHHyCl0uEcrWmsmHo4yxLjlQLqrvyohVQ2moP9B9T0qatR5Z6z89R5hNHNqBWrndqIYHBxKYumSeTosYmvh7dg9iKZ_8bIWYtuIgkR0t5l7hyUwIv3BpWBarT89bEfpAg3DyKbblSt0uyaTw9iJNZw0-yNLQdsK8");'>
+<div class="flex flex-col gap-4 text-left max-w-xl">
+<h1 class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]">The Future is Here: Explore the new X-Series Smartphone</h1>
+<h2 class="text-gray-200 text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">Experience next-generation technology with unparalleled performance and a stunning display.</h2>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors">
+<span class="truncate">Shop Now</span>
+</button>
+</div>
+</div>
+</div>
+<!-- FeatureSection -->
+<div class="flex flex-col gap-10 py-10 @container">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+<div class="flex flex-1 gap-4 rounded-xl border border-gray-200 dark:border-white/10 bg-background-light dark:bg-white/5 p-6 flex-row items-center">
+<span class="material-symbols-outlined text-primary text-3xl">local_shipping</span>
+<div class="flex flex-col gap-1">
+<h2 class="text-gray-900 dark:text-white text-base font-bold leading-tight">Free Shipping</h2>
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">Free, fast delivery on all orders over $50.</p>
+</div>
+</div>
+<div class="flex flex-1 gap-4 rounded-xl border border-gray-200 dark:border-white/10 bg-background-light dark:bg-white/5 p-6 flex-row items-center">
+<span class="material-symbols-outlined text-primary text-3xl">headset_mic</span>
+<div class="flex flex-col gap-1">
+<h2 class="text-gray-900 dark:text-white text-base font-bold leading-tight">24/7 Support</h2>
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">Our team is available around the clock to help you.</p>
+</div>
+</div>
+<div class="flex flex-1 gap-4 rounded-xl border border-gray-200 dark:border-white/10 bg-background-light dark:bg-white/5 p-6 flex-row items-center">
+<span class="material-symbols-outlined text-primary text-3xl">lock</span>
+<div class="flex flex-col gap-1">
+<h2 class="text-gray-900 dark:text-white text-base font-bold leading-tight">Secure Payments</h2>
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">Transactions are safe with our encrypted checkout.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Featured Products Section -->
+<div>
+<h2 class="text-gray-900 dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-0 pb-3 pt-5">Featured Products</h2>
+<div class="flex overflow-x-auto [-ms-scrollbar-style:none] [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden -mx-4 sm:-mx-6 lg:-mx-8">
+<div class="flex items-stretch px-4 sm:px-6 lg:px-8 py-4 gap-4">
+<div class="flex h-full flex-1 flex-col gap-4 rounded-xl bg-white dark:bg-white/5 shadow-sm border border-gray-200 dark:border-white/10 min-w-64 w-64 group">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-t-xl flex flex-col p-3" data-alt="A pair of modern over-ear headphones in black" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB3MRSnTBRWEnhCG39ZimzU3wFmZgWwC6mxt-mQDclsMk_46kOPAUBxrw5A2fVKUdm98ALMTtjx_pT2EBHrY4SJQQmLCyMlT27SfIfG-YAZh6iQx6IyZjPUfxYUT3LoN-BrHH8tyr6b78e86q_fc3Mhxmjrne-R3SMm-9OztHUV12VewMpLNNdAsE5QrKEJy3Fw4w5L93fp3DJam1kU69j3zgYD96OgwEmU0QOeu-CslRD3AaWQdt3zfhQBcQrbIQFj9rBHewWWoJI");'></div>
+<div class="flex flex-col flex-1 justify-between p-4 pt-0 gap-4">
+<div>
+<p class="text-gray-900 dark:text-white text-base font-medium leading-normal">AuraSound Pro Headphones</p>
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">$299.99</p>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary-300 text-sm font-bold leading-normal tracking-[0.015em] group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="truncate">Add to Cart</span>
+</button>
+</div>
+</div>
+<div class="flex h-full flex-1 flex-col gap-4 rounded-xl bg-white dark:bg-white/5 shadow-sm border border-gray-200 dark:border-white/10 min-w-64 w-64 group">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-t-xl flex flex-col p-3" data-alt="A sleek, silver laptop open on a desk" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDnN_X5A8078aHvdjUQTt8VPGBhmjgsgHA1DXSIMoqP689AwJn5u-pSkYXNg7mwrclNIE3DgV30NzC-1IjvNc8hrpzEGXZrnE4RlcnZjdrt8z979eBJPwVQgj6rE3wvZeIRTlpOcqrwWpxekNGMXWZHMsCp119lvhb8dzZCmZGh15E6Btt2m7QwYvyuvpN_iomIM0KMaHKecXrMVOreUgZ3VdKn9licY_AKMWiCEptlBvuB_RzgJmIhVvtM5sjR-od6Nz56mS1bB0E");'></div>
+<div class="flex flex-col flex-1 justify-between p-4 pt-0 gap-4">
+<div>
+<p class="text-gray-900 dark:text-white text-base font-medium leading-normal">GalaxyBook Titan X</p>
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">$1899.00</p>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary-300 text-sm font-bold leading-normal tracking-[0.015em] group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="truncate">Add to Cart</span>
+</button>
+</div>
+</div>
+<div class="flex h-full flex-1 flex-col gap-4 rounded-xl bg-white dark:bg-white/5 shadow-sm border border-gray-200 dark:border-white/10 min-w-64 w-64 group">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-t-xl flex flex-col p-3" data-alt="A large 4K TV mounted on a wall displaying a vibrant nature scene" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAaiXNR5oJc2RU-giAcPi8EgJYAhM0C60wWTKzsN7T_4R3XGAAeytfm9a5AwlhoFBsAM8khqGfMd8PC8UAfsPKvJZ8dZTNkQiO4l5pKGWF3a190YmuZU_6b5USqby5A-Wbn_A6ODQiPxB2-h65d59r0X0mlDiwStC6NoV9TWY88NmRQTw17euQ-BPLDuygVrPPfLBk9ZzdtN2QkiZqPDMqTacU2LcqwLRSCGglyEQdniBG6mAqHYU5P4-1xa0UEDbnfKAAMDRZvoXo");'></div>
+<div class="flex flex-col flex-1 justify-between p-4 pt-0 gap-4">
+<div>
+<p class="text-gray-900 dark:text-white text-base font-medium leading-normal">VisionMax 4K TV</p>
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">$749.50</p>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary-300 text-sm font-bold leading-normal tracking-[0.015em] group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="truncate">Add to Cart</span>
+</button>
+</div>
+</div>
+<div class="flex h-full flex-1 flex-col gap-4 rounded-xl bg-white dark:bg-white/5 shadow-sm border border-gray-200 dark:border-white/10 min-w-64 w-64 group">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-t-xl flex flex-col p-3" data-alt="A professional DSLR camera with a lens attached" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAF6CSNcteXVLDLFuZngo0fyYF4TG0qX1gGOuw4rvXYWyRxP3B2YDB_yXwZvoji9cdahUlPq2l9bxtxcCqN_IeHTJdKJzUyaw3Tr1apn4v2wu9-UJHNPGTXukl0OB5tydjGt1IgdQafvY5r3fEJrmh72lSwC4PYxUtr2Nk-91xiIkAnsktDGdIaPPOUhFJfXcWRt-j5BN5IowH4pJ7Kvt-iwd8n7G6vLY0HAoEqYMcChoN6kuN9hI9BsTHEoc_ImxuZowsr09RQ1L8");'></div>
+<div class="flex flex-col flex-1 justify-between p-4 pt-0 gap-4">
+<div>
+<p class="text-gray-900 dark:text-white text-base font-medium leading-normal">CapturePro DSLR</p>
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">$1250.00</p>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary-300 text-sm font-bold leading-normal tracking-[0.015em] group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="truncate">Add to Cart</span>
+</button>
+</div>
+</div>
+<div class="flex h-full flex-1 flex-col gap-4 rounded-xl bg-white dark:bg-white/5 shadow-sm border border-gray-200 dark:border-white/10 min-w-64 w-64 group">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-t-xl flex flex-col p-3" data-alt="A white and blue gaming console with a controller" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDvl-QnxSFvkTqSjrFsnzMd2cAwVGLvhlhSlJtOP0UOHRwLrACmgUDhJzPQRSfj-YmFfyf75HY-P9_nxe6xpnYlU5eAAxxFDdPFPJtZxq8ySwB8a1y7_yb3dLy5Fnjm65ipfQhloPmP9LqPz9ECq72uSpF0-F8rhSIZbKICBm6M-dJQy2LnC06PC5ZFCkMsW_3HgulgNdmQ1F09MTlT8_RAnbCU-IluAaKn22gdjZhNciM_SqJNEbR28mhN-Ey6Qko9jJnY0FH7nJg");'></div>
+<div class="flex flex-col flex-1 justify-between p-4 pt-0 gap-4">
+<div>
+<p class="text-gray-900 dark:text-white text-base font-medium leading-normal">GameSphere 5</p>
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">$499.00</p>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary-300 text-sm font-bold leading-normal tracking-[0.015em] group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="truncate">Add to Cart</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Category Showcase -->
+<div class="py-10">
+<h2 class="text-gray-900 dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] pb-5">Shop by Category</h2>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<a class="flex flex-col items-center justify-center gap-4 p-6 bg-white dark:bg-white/5 rounded-xl border border-gray-200 dark:border-white/10 hover:shadow-lg hover:border-primary/50 dark:hover:border-primary/50 transition-all" href="#">
+<span class="material-symbols-outlined text-primary text-4xl">smartphone</span>
+<p class="text-gray-900 dark:text-white font-bold text-lg">Smartphones</p>
+</a>
+<a class="flex flex-col items-center justify-center gap-4 p-6 bg-white dark:bg-white/5 rounded-xl border border-gray-200 dark:border-white/10 hover:shadow-lg hover:border-primary/50 dark:hover:border-primary/50 transition-all" href="#">
+<span class="material-symbols-outlined text-primary text-4xl">laptop_mac</span>
+<p class="text-gray-900 dark:text-white font-bold text-lg">Laptops</p>
+</a>
+<a class="flex flex-col items-center justify-center gap-4 p-6 bg-white dark:bg-white/5 rounded-xl border border-gray-200 dark:border-white/10 hover:shadow-lg hover:border-primary/50 dark:hover:border-primary/50 transition-all" href="#">
+<span class="material-symbols-outlined text-primary text-4xl">headphones</span>
+<p class="text-gray-900 dark:text-white font-bold text-lg">Audio</p>
+</a>
+<a class="flex flex-col items-center justify-center gap-4 p-6 bg-white dark:bg-white/5 rounded-xl border border-gray-200 dark:border-white/10 hover:shadow-lg hover:border-primary/50 dark:hover:border-primary/50 transition-all" href="#">
+<span class="material-symbols-outlined text-primary text-4xl">stadia_controller</span>
+<p class="text-gray-900 dark:text-white font-bold text-lg">Gaming</p>
+</a>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full bg-white dark:bg-white/5 border-t border-gray-200 dark:border-white/10 mt-12">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+<div class="flex flex-col gap-4">
+<div class="flex items-center gap-3 text-gray-900 dark:text-white">
+<span class="material-symbols-outlined text-primary text-3xl">electric_bolt</span>
+<h2 class="text-xl font-bold">ElectroMart</h2>
+</div>
+<p class="text-gray-500 dark:text-gray-400 text-sm">Your one-stop shop for the latest and greatest in electronics.</p>
+</div>
+<div class="flex flex-col gap-4">
+<h3 class="font-bold text-gray-900 dark:text-white">Shop</h3>
+<ul class="flex flex-col gap-2">
+<li><a class="text-sm text-gray-500 dark:text-gray-400 hover:text-primary" href="#">Categories</a></li>
+<li><a class="text-sm text-gray-500 dark:text-gray-400 hover:text-primary" href="#">Deals</a></li>
+<li><a class="text-sm text-gray-500 dark:text-gray-400 hover:text-primary" href="#">New Arrivals</a></li>
+</ul>
+</div>
+<div class="flex flex-col gap-4">
+<h3 class="font-bold text-gray-900 dark:text-white">Support</h3>
+<ul class="flex flex-col gap-2">
+<li><a class="text-sm text-gray-500 dark:text-gray-400 hover:text-primary" href="#">About Us</a></li>
+<li><a class="text-sm text-gray-500 dark:text-gray-400 hover:text-primary" href="#">Help/FAQ</a></li>
+<li><a class="text-sm text-gray-500 dark:text-gray-400 hover:text-primary" href="#">Contact Us</a></li>
+</ul>
+</div>
+<div class="flex flex-col gap-4">
+<h3 class="font-bold text-gray-900 dark:text-white">Stay Connected</h3>
+<p class="text-sm text-gray-500 dark:text-gray-400">Subscribe to our newsletter for the latest updates.</p>
+<div class="flex gap-2">
+<input class="form-input flex-1 rounded-lg text-sm bg-gray-100 dark:bg-white/5 border-gray-300 dark:border-white/10 focus:ring-primary/50 focus:border-primary/50 text-gray-900 dark:text-white" placeholder="Your email"/>
+<button class="rounded-lg bg-primary text-white px-4 py-2 text-sm font-bold hover:bg-primary/90">Sign Up</button>
+</div>
+</div>
+</div>
+<div class="mt-8 pt-8 border-t border-gray-200 dark:border-white/10 text-center text-sm text-gray-500 dark:text-gray-400">
+<p>© 2024 ElectroMart. All rights reserved.</p>
+</div>
+</div>
+</footer>
+</div>
+</div>
+</body></html>
